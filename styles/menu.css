@@ -1,10 +1,7 @@
-
-/* * {
-  position: relative;
+* {
   box-sizing: border-box;
   font-family: "微軟正黑體";
-  color: #373741;
-} */
+}
 
 a {
   text-decoration: none;
@@ -44,6 +41,7 @@ ul {
 }
 .logo {
   height: 100%;
+  position: relative;
 }
 .logo img {
   height: 100%;
