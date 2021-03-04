@@ -1,0 +1,69 @@
+img {
+  width: 100%;
+}
+
+.kv {
+  width: 100%;
+  background-color: #fee854;
+  overflow: hidden;
+}
+
+.kv-content {
+  max-width: 1366px;
+  margin: auto;
+
+  position: relative;
+  padding-top: 36.6%;
+}
+
+@media (min-width: 1366px) {
+  .kv-content {
+    padding-top: 500px
+  }
+}
+
+.kv-content div {
+  position: absolute;
+}
+
+.kv-1 {
+  width: 11.5%;
+  left: 32.7%;
+  top: 0%;
+  z-index: 1;
+}
+
+.kv-2 {
+  width: 28.2%;
+  left: 26%;
+  top: 18%;
+  z-index: 1;
+}
+
+.kv-hand {
+  width: 2.7%;
+  left:43%;
+  top: 32%;
+  z-index: 1;
+}
+
+.kv-3 {
+  width: 23.3%;
+  left: 27.6%;
+  top: 42%;
+  z-index: 1;
+}
+
+.kv-4 {
+  width: 28.6%;
+  left: 25.1%;
+  top: 62%;
+  z-index: 1;
+}
+
+.kv-5 {
+  width: 72.9%;
+  left: 14.6%;
+  top: 2.6%;
+  z-index: 0;
+}

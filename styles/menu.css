@@ -34,7 +34,7 @@ button:hover {
   display: none;
 }
 .container {
-  max-width: 1150px;
+  max-width: 1366px;
 }
 ul {
   padding-left: 15px;
@@ -59,7 +59,7 @@ header.menuArea {
   background-color: #007979;
   height: 50px;
   width: 100%;
-  position: fixed;
+  /* position: fixed; */
   z-index: 99;
 }
 header.menuArea .container {
