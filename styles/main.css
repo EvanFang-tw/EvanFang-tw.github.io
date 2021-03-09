@@ -88,6 +88,7 @@ w {
   color: #fee854;
 }
 
+/* kv */
 .kv {
   width: 100%;
   background-color: #fee854;
@@ -99,12 +100,12 @@ w {
   margin: auto;
 
   position: relative;
-  padding-top: 36.6%;
+  padding-top: 51.2%;
 }
 
 @media (min-width: 1366px) {
   .kv-content {
-    padding-top: 500px
+    padding-top: 700px
   }
 }
 
@@ -117,36 +118,36 @@ w {
 }
 
 .kv-1 {
-  width: 11.5%;
-  left: 32.7%;
+  width: 16.2%;
+  left: 25.8%;
   top: 0%;
   z-index: 1;
 }
 
 .kv-2 {
-  width: 28.2%;
-  left: 26%;
+  width: 39.7%;
+  left: 16.3%;
   top: 18%;
   z-index: 1;
 }
 
 .kv-hand {
-  width: 2.7%;
-  left:43%;
+  width: 3.8%;
+  left:40%;
   top: 32%;
   z-index: 1;
 }
 
 .kv-3 {
-  width: 23.3%;
-  left: 27.6%;
+  width: 32.8%;
+  left: 18.3%;
   top: 42%;
   z-index: 1;
 }
 
 .kv-4 {
-  width: 28.6%;
-  left: 25.1%;
+  width: 40.3%;
+  left: 15.0%;
   top: 62%;
   z-index: 1;
 
@@ -154,8 +155,8 @@ w {
 }
 
 .kv-6 {
-  width: 28.6%;
-  left: 24.6%;
+  width: 40.3%;
+  left: 14.4%;
   top: 61%;
   z-index: 1;
 
@@ -164,30 +165,31 @@ w {
 
 .kv-message {
   color: white;
-  font-size: 1.4vw;
+  font-size: 1.85vw;
   width: 40%;
-  top: 62%;
-  left: 25.7%;
+  top: 61.0%;
+  left: 16.9%;
   z-index: 1;
 }
 
 .kv-message .larger {
-  font-size: 2vw;
+  font-size: 3vw;
 }
 
 @media (min-width: 1366px) {
   .kv-message {
-    font-size: 19px;
+    font-size: 26px;
+    top: 61.4%;
   }
   .kv-message .larger {
-    font-size: 25px;
+    font-size: 38px;
   }
 }
 
 .kv-5 {
-  width: 72.9%;
-  left: 14.6%;
-  top: 2.6%;
+  width: 99.9%;
+  left: 0.1%;
+  top: 4.6%;
   z-index: 0;
 }
 
