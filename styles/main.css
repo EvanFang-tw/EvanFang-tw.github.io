@@ -327,6 +327,7 @@ w {
   display: flex;
   margin-left: 17%;
   margin-right: 17%;
+  align-items: flex-start;
 }
 
 .s2-col-1 {
@@ -334,9 +335,11 @@ w {
 }
 
 .s2-col-2 {
-  width: 40%;
   position: relative;
   padding-top: 360px;
+  flex-basis: 360px;
+  flex-grow: 0;
+  flex-shrink: 0;
 }
 
 .s2-col-2 img {
@@ -344,23 +347,23 @@ w {
 }
 
 .s2-col-2 .woman-img {
-  top: -23%;
-  left: 0%;
+  top: -27%;
+  left: 21%;
 }
 
 .s2-col-2 .star-small-img {
-  top: 45%;
-  left: 25%;
+  top: 51%;
+  left: 42%;
 }
 
 .s2-col-2 .star-large-img {
-  top: 47%;
-  left: 30%;
+  top: 52%;
+  left: 46%;
 }
 
 .s2-col-2 .title-img {
-  top: 48%;
-  left: -8%;
+  top: 54%;
+  left: 9%;
 }
 
 .s2 .s2-col-1 img {
@@ -423,8 +426,8 @@ w {
   letter-spacing: 1px;
 
   position: absolute;
-  left: 7%;
-  top: 84%;
+  left: 25%;
+  top: 93%;
 }
 /* end s2 */
 
