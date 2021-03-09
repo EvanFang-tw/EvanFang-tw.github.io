@@ -234,9 +234,11 @@ w {
 }
 
 .s1 .s1-col-1 {
-  width: 333px;
   padding-top: 529px;
   position: relative;
+  flex-basis: 333px;
+  flex-grow: 0;
+  flex-shrink: 0;
 }
 
 .s1 .s1-col-2 {
@@ -314,6 +316,7 @@ w {
   background-image: url("../images/s2-bg.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  overflow: hidden;
 }
 
 .s2-content {
