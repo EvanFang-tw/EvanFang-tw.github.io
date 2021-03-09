@@ -3,6 +3,10 @@ p {
   margin: 0;
 }
 
+h3 {
+  font-size: 36px;
+}
+
 /* word animations */
 @keyframes show{
   from {
@@ -208,37 +212,41 @@ w {
   align-items: flex-start;
 
   padding-top: 40px;
-  margin-left: 23%;
-  margin-right: 23%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .s1 .gray-zone {
   background-color: #f4f4f4;
   border: solid 1px #231815;
   box-shadow: 7px 7px 0px rgb(0 0 0);
-  padding: 10px;
+  padding: 18px;
 }
 
 .s1 .gray-zone p {
-  line-height: 1.6;
-  letter-spacing: 1px;
-  font-size: 12px;
+  line-height: 1.8;
+  letter-spacing: 2px;
+  font-size: 16px;
 }
 
 .s1 .dialog-triangle-zone {
-  margin-left: 55%;
+  margin-left: 51%;
 }
 
 .s1 .s1-col-1 {
-  width: 240px;
-  padding-top: 400px;
+  width: 333px;
+  padding-top: 529px;
   position: relative;
 }
 
 .s1 .s1-col-2 {
   width: 68%;
-
   padding-left: 30px;
+  padding-top: 12px;
+}
+
+.s1 .s1-col-2 h3 {
+  margin-top: 20px;
 }
 
 .s1 .s1-col-1 img{
@@ -270,29 +278,31 @@ w {
 }
 
 .s1 .yellow-line1 {
-  height: 20px;
-  width: 265px;
+  height: 22px;
+  width: 323px;
   background-color: #ffea44;
-  margin-top: -23px;
+  margin-top: -27px;
   margin-left: -13px;
 }
 
 .s1 .s1-list {
-  margin-top: 15px;
+  margin-top: 19px;
+  margin-bottom: 42px;
   letter-spacing: 1px;
-  line-height: 28px;
-  font-size: 14px;
+  line-height: 38px;
+  font-size: 17px;
 }
 
 .s1 .s1-action-link {
+  font-size: 24px;
   background-color: black;
   color: white;
   border-radius: 10px;
-  width: 130px;
-  height: 41px;
+  width: 184px;
+  height: 54px;
   display: inline-block;
   text-align: center;
-  padding-top: 7px;
+  padding-top: 9px;
   letter-spacing: 1px;
   margin-left: 15px;
 }
