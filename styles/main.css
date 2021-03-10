@@ -391,11 +391,15 @@ w {
     padding-bottom: 40px;
     border-top: 2px solid black;
   }
+  .s1-content {
+    max-width: 500px;
+  }
   .s1-row {
     display: block;
     margin-left: 0;
     margin-right: 0;
     padding-top: 0px;
+    margin-top: 30px;
   }
   .s1 .s1-col-1 {
     padding-top: 30%;
@@ -461,6 +465,57 @@ w {
     width: 156px;
     height: 47px;
     margin-left: 0px;
+  }
+  .s1-banner {
+    margin-top: 33px;
+  }
+  .s1-kv3 {
+    width: 71.2%;
+    margin: auto;
+  }
+  .s1-kv3 img {
+    width: 100%;
+  }
+  .s1-banner .black-rect {
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    margin-left: 4.8%;
+    margin-right: 4.8%;
+    padding-bottom: 11px;
+    padding-top: 6px;
+    text-align: center;
+    padding-right: 10px;
+    font-size: 20px;
+  }
+  .s1-words {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+    position: relative;
+  }
+  .s1-words .black-rect .larger {
+    font-size: 30px;
+  }
+  .s1-words .white-rect {
+    position: absolute;
+    top: 10%;
+    z-index: -1;
+    width: 91.7%;
+    left: 5%;
+  }
+  .s1-words .white-rect img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .s1-banner .black-rect {
+    font-size: 4vw;
+  }
+  .s1-words .black-rect .larger {
+    font-size: 6vw;
   }
 }
 /* end s1 */
@@ -601,6 +656,7 @@ w {
   .s2-content {
     padding-top: 0px;
     padding-bottom: 46px;
+    max-width: 500px;
   }
   .s2-row {
     flex-direction: column-reverse;
@@ -783,6 +839,7 @@ w {
     width: 100%;
   }
   .s3-content {
+    max-width: 500px;
     padding-top: 0%;
   }
   .s3-col-1 {

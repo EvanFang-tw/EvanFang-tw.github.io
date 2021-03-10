@@ -50,28 +50,28 @@
     <div class="kv">
       <div class="kv-content">
         <div class="kv-1">
-          <img src="./images/kv-1.png"/>
+          <img src="./images/kv-1.png" />
         </div>
         <div class="kv-2">
-          <img src="./images/kv-2.png"/>
+          <img src="./images/kv-2.png" />
         </div>
         <div class="kv-star-s">
-          <img src="./images/kv-star-s.png">
+          <img src="./images/kv-star-s.png" />
         </div>
         <div class="kv-star-l">
-          <img src="./images/kv-star-l.png">
+          <img src="./images/kv-star-l.png" />
         </div>
         <div class="kv-hand">
-          <img src="./images/kv-hand.png"/>
+          <img src="./images/kv-hand.png" />
         </div>
         <div class="kv-3 desktop">
-          <img src="./images/kv-3.png"/>
+          <img src="./images/kv-3.png" />
         </div>
         <div class="kv-4 desktop">
-          <img src="./images/kv-4.png"/>
+          <img src="./images/kv-4.png" />
         </div>
         <div class="kv-6 desktop">
-          <img src="./images/kv-6.png"/>
+          <img src="./images/kv-6.png" />
         </div>
         <div class="kv-message desktop">
           <!-- 線上交易輕鬆投資<span class="yellow">USD <span class="larger">5,000</span></span>即可申購 ▶ -->
@@ -89,7 +89,7 @@
           <img src="./images/kv-5.png" alt="" />
         </div>
         <div class="kv-bg-mobile mobile">
-          <img src="./images/kv-bg-mobile.png" alt="">
+          <img src="./images/kv-bg-mobile.png" alt="" />
         </div>
       </div>
     </div>
@@ -98,6 +98,22 @@
     <!-- section-1 -->
     <div class="s1">
       <div class="s1-content">
+        <div class="s1-banner mobile">
+          <div class="s1-kv3">
+            <img src="./images/kv-3.png" />
+          </div>
+          <div class="s1-words">
+            <div class="black-rect">
+              <span class="larger">&nbsp</span>
+              <!-- 線上交易輕鬆投資<span class="yellow"
+                >USD <span class="larger">5,000</span></span
+              >即可申購 ▶ -->
+            </div>
+            <div class="white-rect">
+              <img src="./images/kv-4.png">
+            </div>
+          </div>
+        </div>
         <div class="s1-row">
           <div class="s1-col-1">
             <img class="img1" src="./images/s1-1.png" />
@@ -107,7 +123,10 @@
               <!-- todo: 輪播效果 -->
               <img class="img4" src="./images/s1-4.png" />
             </div>
-            <img class="mobile s1-steps-mobile" src="./images/s1-steps-mobile.png">
+            <img
+              class="mobile s1-steps-mobile"
+              src="./images/s1-steps-mobile.png"
+            />
           </div>
           <div class="s1-col-2">
             <div class="gray-zone">
@@ -342,6 +361,52 @@
     <script>
       //
       new WOW().init();
+      //
+      // This section controls mobile typing area
+      let isTyping = false;
+      const words = [
+        '線',
+        '上',
+        '交',
+        '易',
+        '輕',
+        '鬆',
+        '投',
+        '資',
+        '<span class="yellow">U</span>',
+        '<span class="yellow">S</span>',
+        '<span class="yellow">D</span>',
+        '<span class="yellow larger">5</span>',
+        '<span class="yellow larger">,</span>',
+        '<span class="yellow larger">0</span>',
+        '<span class="yellow larger">0</span>',
+        '<span class="yellow larger">0</span>',
+        '即',
+        '可',
+        '申',
+        '購',
+        '&nbsp;▶'
+      ];
+      $(document).scroll(function () {
+        const typingArea = $(".s1-words .black-rect");
+        const t = typingArea.position().top;
+        const h = typingArea.height();
+        // Current scroll y position
+        var y = $(this).scrollTop() + $(window).height();
+        if (y > t + h && isTyping === false) {
+          isTyping = true;
+          // typingArea.html(words[0]);
+          let i = 0;
+          let timer = setInterval(function() {
+            typingArea.html(typingArea.html() + words[i]);
+            ++i;
+            if (i >= words.length) {
+              console.log('stop typing')
+              clearInterval(timer);
+            }
+          }, 250);
+        }
+      });
       //
       $(document).ready(function () {
         // Slide button
