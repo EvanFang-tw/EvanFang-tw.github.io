@@ -142,6 +142,20 @@ w {
   z-index: 1;
 }
 
+.kv-star-s {
+  width: 1.5%;
+  left:39.8%;
+  top: 18.5%;
+  z-index: 2;
+}
+
+.kv-star-l {
+  width: 2.5%;
+  left:42.3%;
+  top: 14%;
+  z-index: 2;
+}
+
 .kv-3 {
   width: 32.8%;
   left: 18.3%;
@@ -200,6 +214,7 @@ w {
 /* s1 */
 .s1 {
   width: 100%;
+  border-top: 4px solid black;
 }
 
 .s1-content {
