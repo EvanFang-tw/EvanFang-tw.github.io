@@ -455,6 +455,13 @@ w {
   .s1 .s1-action-link {
     margin-left: 0px;
   }
+  .s1 .s1-action-link {
+    font-size: 20px;
+    border-radius: 10px;
+    width: 156px;
+    height: 47px;
+    margin-left: 0px;
+  }
 }
 /* end s1 */
 
@@ -668,12 +675,12 @@ w {
     margin-top: 46px;
   }
   .s2-action-link-m {
-    font-size: 24px;
+    font-size: 20px;
     background-color: black;
     color: white;
     border-radius: 10px;
-    width: 184px;
-    height: 54px;
+    width: 156px;
+    height: 47px;
     display: inline-block;
     text-align: center;
     padding-top: 9px;
@@ -811,6 +818,11 @@ w {
     padding-top: 25px;
     margin-left: -40px;
     text-align: center;
+  }
+  .s3 .s3-action-link {
+    font-size: 20px;
+    width: 198px;
+    height: 47px;
   }
 }
 /* end s3 */
