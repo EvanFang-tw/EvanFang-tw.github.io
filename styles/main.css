@@ -7,6 +7,15 @@ h3 {
   font-size: 36px;
 }
 
+/* overwrite */
+.logo {
+  padding-top: 5px;
+}
+
+.logo img {
+  height: 40px;
+}
+
 /* word animations */
 @keyframes show{
   from {
