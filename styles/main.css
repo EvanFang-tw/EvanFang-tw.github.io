@@ -372,6 +372,20 @@ w {
   font-size: 17px;
 }
 
+.s1 .s1-action-link {
+  font-size: 24px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  width: 184px;
+  height: 54px;
+  display: inline-block;
+  text-align: center;
+  padding-top: 9px;
+  letter-spacing: 1px;
+  margin-left: 15px;
+}
+
 @media (max-width: 800px) {
   .s1 {
     padding-bottom: 40px;
@@ -438,20 +452,9 @@ w {
   .s1 .s1-action-link-wrapper {
     text-align: center;
   }
-}
-
-.s1 .s1-action-link {
-  font-size: 24px;
-  background-color: black;
-  color: white;
-  border-radius: 10px;
-  width: 184px;
-  height: 54px;
-  display: inline-block;
-  text-align: center;
-  padding-top: 9px;
-  letter-spacing: 1px;
-  margin-left: 15px;
+  .s1 .s1-action-link {
+    margin-left: 0px;
+  }
 }
 /* end s1 */
 
@@ -760,6 +763,55 @@ w {
   text-align: center;
   padding-top: 9px;
   letter-spacing: 1px;
+}
+
+@media (max-width: 800px) {
+  .s3 {
+    padding-bottom: 40px;
+  }
+  .s3-row {
+    display: block;
+    margin-left: 0%;
+    margin-right: 0%;
+    width: 100%;
+  }
+  .s3-content {
+    padding-top: 0%;
+  }
+  .s3-col-1 {
+    padding-top: 39%;
+  }
+  .s3-col-1 .star-small {
+    width: 1.6%;
+    top: 30%;
+    left: 22.2%;
+  }
+  .s3-col-1 .star-large {
+    width: 2.8%;
+    top: 31%;
+    left: 25%;
+  }
+  .s3-col-1 .title {
+    width: 44.8%;
+    top: 35%;
+    left: 5.8%;
+  }
+  .s3-col-1 .man {
+    width: 41.2%;
+    top: -7%;
+    left: 55.6%;
+  }
+  .s3-col-2 ul {
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    padding-right: 33px;
+  }
+  .s3 .s3-action-link-container {
+    padding-top: 25px;
+    margin-left: -40px;
+    text-align: center;
+  }
 }
 /* end s3 */
 
