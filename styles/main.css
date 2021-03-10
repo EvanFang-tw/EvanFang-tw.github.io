@@ -18,7 +18,7 @@ h3 {
 
 /* RWD pc mobile switch */
 .desktop {
-  display: initial;
+  display: inherit;
 }
 .mobile {
   display: none;
@@ -29,7 +29,7 @@ h3 {
     display: none;
   }
   .mobile {
-    display: initial;
+    display: inherit;
   }
 }
 
@@ -373,6 +373,10 @@ w {
 }
 
 @media (max-width: 800px) {
+  .s1 {
+    padding-bottom: 40px;
+    border-top: 2px solid black;
+  }
   .s1-row {
     display: block;
     margin-left: 0;
@@ -572,6 +576,106 @@ w {
   position: absolute;
   left: 25%;
   top: 93%;
+}
+
+@media (max-width: 800px) {
+  .s2 {
+    background-image: none;
+    background-repeat: initial;
+    background-size: initial;
+    background-color: #e8e8e8;
+    overflow: visible;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+  }
+  .s2-content {
+    padding-top: 0px;
+    padding-bottom: 46px;
+  }
+  .s2-row {
+    flex-direction: column-reverse;
+    margin-left: 0%;
+    margin-right: 0%;
+    align-items: initial;
+  }
+  .s2-col-2 {
+    padding-top: 32%;
+    flex-basis: 0;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+  .s2-col-2 .woman-img {
+    width: 28.2%;
+    top: -13%;
+    left: 63.8%;
+  }
+  .s2-col-2 .title-img {
+    width: 45.2%;
+    top: 36%;
+    left: 5.8%;
+  }
+  .s2-col-2 .star-small-img {
+    width: 1.6%;
+    top: 33%;
+    left: 23.6%;
+  }
+  
+  .s2-col-2 .star-large-img {
+    width: 2.8%;
+    top: 34%;
+    left: 26%;
+  }
+  .s2 .s2-action-link {
+    display: none;
+  }
+  .s2 .s2-info-row:first-child {
+    margin-top: -15px;
+  }
+  .s2-col-1 {
+    width: 100%;
+    padding-left: 34px;
+  }
+  .s2 .red-dot {
+    width: 28px;
+    height: 28px;
+    margin-top: 0px;
+  }
+  .s2 h3 {
+    font-size: 24px;
+  }
+  .s2 .s2-info-col-2 p {
+    font-size: 16px;
+  }
+  .s2 .yellow-line {
+    height: 15px;
+    margin-top: -12px;
+  }
+  .s2 .yellow-line.line1 {
+    width: 222px;
+  }
+  .s2 .yellow-line.line2 {
+    width: 254px;
+  }
+  .s2 .yellow-line.line3 {
+    width: 195px;
+  }
+  .s2 .s2-action-link-m-wrapper {
+    width: 100%;
+    text-align: center;
+    margin-top: 46px;
+  }
+  .s2-action-link-m {
+    font-size: 24px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    width: 184px;
+    height: 54px;
+    display: inline-block;
+    text-align: center;
+    padding-top: 9px;
+    letter-spacing: 1px;
+  }
 }
 /* end s2 */
 
