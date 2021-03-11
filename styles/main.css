@@ -759,7 +759,8 @@ w {
   }
   .s2-col-1 {
     width: 100%;
-    padding-left: 34px;
+    padding-left: 6%;
+    padding-right: 10%;
   }
   .s2 .red-dot {
     width: 28px;
