@@ -74,7 +74,7 @@
           <img src="./images/kv-6.png" />
         </div>
         <div class="kv-message desktop">
-          <!-- 線上交易輕鬆投資<span class="yellow">USD <span class="larger">5,000</span></span>即可申購 ▶ -->
+          <!-- 線上交易輕鬆投資<span class="yellow">USD <span class="larger">5,000</span></span>即可申購 -->
           <w class="w1">線</w><w class="w2">上</w><w class="w3">交</w
           ><w class="w4">易</w><w class="w5">輕</w><w class="w6">鬆</w
           ><w class="w7">投</w><w class="w8">資</w><w class="w9 yellow">U</w
@@ -83,7 +83,7 @@
           ><w class="w14 yellow larger">0</w><w class="w15 yellow larger">0</w
           ><w class="w16 yellow larger">0</w><w class="w17">即</w
           ><w class="w18">可</w><w class="w19">申</w><w class="w20">購 </w
-          ><w class="w21">&#x25ba</w>
+          ><w class="w21"><img class="kv-white-triangle" src="./images/white-triangle.jpg"></img></w>
         </div>
         <div class="kv-5 desktop">
           <img src="./images/kv-5.png" alt="" />
@@ -107,7 +107,7 @@
               <span class="larger">&nbsp</span>
               <!-- 線上交易輕鬆投資<span class="yellow"
                 >USD <span class="larger">5,000</span></span
-              >即可申購 ▶ -->
+              >即可申購-->
             </div>
             <div class="white-rect">
               <img src="./images/kv-4.png">
@@ -153,7 +153,7 @@
               </ul>
             </div>
             <div class="s1-action-link-wrapper">
-              <a class="s1-action-link" href="#">立即行動 ▶</a>
+              <a class="s1-action-link" href="#">立即行動 <img src="./images/white-triangle.jpg"></img></a>
             </div>
           </div>
         </div>
@@ -208,11 +208,11 @@
             <img class="star-small-img" src="./images/s2-star-small.png" />
             <img class="star-large-img" src="./images/s2-star-large.png" />
             <img class="title-img" src="./images/s2-title.png" />
-            <a class="s2-action-link" href="">立即行動 ▶</a>
+            <a class="s2-action-link" href="">立即行動<img src="./images/white-triangle.jpg"></img></a>
           </div>
         </div>
         <div class="s2-action-link-m-wrapper mobile">
-          <a class="s2-action-link-m" href="">立即行動 ▶</a>
+          <a class="s2-action-link-m" href="">立即行動<img src="./images/white-triangle.jpg"></img></a>
         </div>
       </div>
     </div>
@@ -247,7 +247,7 @@
               </li>
             </ul>
             <div class="s3-action-link-container">
-              <a class="s3-action-link" href="">好Bond債券 ▶</a>
+              <a class="s3-action-link" href="">好Bond債券<img src="./images/white-triangle.jpg"></img></a>
             </div>
           </div>
         </div>
@@ -385,30 +385,42 @@
         '可',
         '申',
         '購',
-        '&nbsp;▶'
+        '&nbsp;<img src="./images/white-triangle.jpg"></img>'
       ];
-      $(document).scroll(function () {
-        const typingArea = $(".s1-words .black-rect");
+      //
+      function checkTyping() {
+        const typingArea = $(".s1-words");
+        const blackRect = $(".s1-words .black-rect")
         const t = typingArea.position().top;
-        const h = typingArea.height();
+        const h = blackRect.height();
         // Current scroll y position
         var y = $(this).scrollTop() + $(window).height();
         if (y > t + h && isTyping === false) {
-          isTyping = true;
-          // typingArea.html(words[0]);
-          let i = 0;
-          let timer = setInterval(function() {
-            typingArea.html(typingArea.html() + words[i]);
-            ++i;
-            if (i >= words.length) {
-              console.log('stop typing')
-              clearInterval(timer);
-            }
-          }, 250);
+          typeWords();
         }
-      });
+      }
+      function typeWords() {
+        isTyping = true;
+        const typingArea = $(".s1-words .black-rect");
+        let i = 0;
+        let timer = setInterval(function() {
+          typingArea.html(typingArea.html() + words[i]);
+          ++i;
+          if (i >= words.length) {
+            console.log('stop typing')
+            clearInterval(timer);
+          }
+        }, 250);
+      }
       //
       $(document).ready(function () {
+        // When page loaded, check if typing is need
+        checkTyping();
+        // Or register typing handler when scroll
+        $(document).scroll(function () {
+          checkTyping();
+        });
+        //
         // Slide button
         let status = "hide"; // hide or show
         $("#switch-btn-1").click(function () {

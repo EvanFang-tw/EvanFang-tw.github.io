@@ -260,6 +260,11 @@ w {
   font-size: 3vw;
 }
 
+.kv-white-triangle {
+  width: 4% !important;
+  transform: translateY(-10%);
+}
+
 @media (min-width: 1366px) {
   .kv-message {
     font-size: 26px;
@@ -378,7 +383,7 @@ w {
 
 .s1 .s1-action-link {
   font-size: 24px;
-  background-color: black;
+  background-color: #231815;
   color: white;
   border-radius: 10px;
   width: 184px;
@@ -388,6 +393,11 @@ w {
   padding-top: 9px;
   letter-spacing: 1px;
   margin-left: 15px;
+}
+
+.s1 .s1-action-link img {
+  width: 21px;
+  transform: translateY(-2px);
 }
 
 @media (max-width: 800px) {
@@ -481,7 +491,7 @@ w {
     width: 100%;
   }
   .s1-banner .black-rect {
-    background-color: black;
+    background-color: #231815;
     color: white;
     border-radius: 20px;
     margin-left: 4.8%;
@@ -511,6 +521,13 @@ w {
   }
   .s1-words .white-rect img {
     width: 100%;
+  }
+  .s1-words .black-rect img {
+    width: 18px;
+    transform: translateY(-2px);
+  }
+  .s1 .s1-action-link img {
+    width: 18px;
   }
 }
 
@@ -632,7 +649,7 @@ w {
 
 .s2 .s2-action-link {
   font-size: 24px;
-  background-color: black;
+  background-color: #231815;
   color: white;
   border-radius: 10px;
   width: 184px;
@@ -645,6 +662,12 @@ w {
   position: absolute;
   left: 25%;
   top: 93%;
+}
+
+.s2 .s2-action-link img {
+  width: 19px;
+  transform: translateY(-2px) translateX(7px);
+  position: relative;
 }
 
 @media (max-width: 800px) {
@@ -736,7 +759,7 @@ w {
   }
   .s2-action-link-m {
     font-size: 20px;
-    background-color: black;
+    background-color: #231815;
     color: white;
     border-radius: 10px;
     width: 156px;
@@ -745,6 +768,10 @@ w {
     text-align: center;
     padding-top: 9px;
     letter-spacing: 1px;
+  }
+  .s2-action-link-m img {
+    width: 18px;
+    transform: translate(7px, -1px);
   }
 }
 /* end s2 */
@@ -821,7 +848,7 @@ w {
 
 .s3 .s3-action-link {
   font-size: 24px;
-  background-color: black;
+  background-color: #231815;
   color: white;
   border-radius: 10px;
   width: 232px;
@@ -830,6 +857,11 @@ w {
   text-align: center;
   padding-top: 9px;
   letter-spacing: 1px;
+}
+
+.s3 .s3-action-link img {
+  width: 19px;
+  transform: translateX(10px) translateY(-2px);
 }
 
 @media (max-width: 800px) {
