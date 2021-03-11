@@ -30,9 +30,9 @@
         </div>
         <div class="menuList">
           <ul>
-            <li><a>好Bond投資</a></li>
-            <li><a>好Bond特色</a></li>
-            <li><a>好Bond入門</a></li>
+            <li><a go-to="#sc-target1">好Bond投資</a></li>
+            <li><a go-to="#sc-target2">好Bond特色</a></li>
+            <li><a go-to="#sc-target3">好Bond入門</a></li>
             <li class="sp"><a>我要投資</a></li>
           </ul>
         </div>
@@ -96,7 +96,7 @@
     <!-- end kv -->
 
     <!-- section-1 -->
-    <div class="s1">
+    <div id="sc-target1" class="s1">
       <div class="s1-content">
         <div class="s1-banner mobile">
           <div class="s1-kv3">
@@ -166,7 +166,7 @@
     <!-- end section 1 -->
 
     <!-- section 2 -->
-    <div class="s2">
+    <div class="s2" id="sc-target2">
       <div class="s2-content">
         <div class="s2-row">
           <!-- left -->
@@ -223,7 +223,7 @@
     <!-- end section 2 -->
 
     <!-- section 3 -->
-    <div class="s3">
+    <div class="s3" id="sc-target3">
       <div class="s3-content">
         <div class="s3-row">
           <div class="s3-col-1">
@@ -441,6 +441,15 @@
               $("#arrow-down").hide();
             });
           }
+        });
+        // Scroll handler
+        $("[go-to]").click(function() {
+          const target = $(this).attr('go-to');
+          $([document.documentElement, document.body]).animate({
+              scrollTop: $(target).offset().top,
+            },
+            600
+          );
         });
       });
     </script>
