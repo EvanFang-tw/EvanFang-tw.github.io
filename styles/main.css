@@ -191,7 +191,7 @@ w {
     padding-top: 93%;
   }
   .kv-bg-mobile {
-    top: 0%;
+    top: 0.5%;
     width: 121.1%;
     left: -16%;
   }
@@ -523,8 +523,8 @@ w {
     width: 100%;
   }
   .s1-words .black-rect img {
-    width: 18px;
-    transform: translateY(-2px);
+    width: 4.2%;
+    transform: translateY(-14%);
   }
   .s1 .s1-action-link img {
     width: 18px;
