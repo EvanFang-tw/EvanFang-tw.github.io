@@ -59,13 +59,13 @@ h3 {
 .kv-hand {
   animation-name: clickh;
   animation-duration: 0.5s;
-  /* animation-direction: alternate;
-  animation-fill-mode: backwards; */
+  animation-delay: 1s;
 }
 
 .kv-2 {
   animation-name: skewh;
   animation-duration: 0.5s;
+  animation-delay: 1s;
   animation-direction: alternate;
   animation-fill-mode: backwards;
 }
