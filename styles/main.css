@@ -37,6 +37,39 @@ h3 {
   }
 }
 
+/* hand animation */
+@keyframes clickh {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.9);
+  }
+}
+
+@keyframes skewh {
+  from {
+    transform: skew(0deg);
+  }
+  to {
+    transform: skew(2deg);
+  }
+}
+
+.kv-hand {
+  animation-name: clickh;
+  animation-duration: 0.5s;
+  /* animation-direction: alternate;
+  animation-fill-mode: backwards; */
+}
+
+.kv-2 {
+  animation-name: skewh;
+  animation-duration: 0.5s;
+  animation-direction: alternate;
+  animation-fill-mode: backwards;
+}
+
 /* word animations */
 @keyframes show {
   from {

@@ -55,10 +55,10 @@
         <div class="kv-2">
           <img src="./images/kv-2.png" />
         </div>
-        <div class="kv-star-s">
+        <div class="kv-star-s wow bounceIn" style="animation-delay: 0.1s;">
           <img src="./images/kv-star-s.png" />
         </div>
-        <div class="kv-star-l">
+        <div class="kv-star-l wow bounceIn" style="animation-delay: 0.6s;">
           <img src="./images/kv-star-l.png" />
         </div>
         <div class="kv-hand">
@@ -116,12 +116,16 @@
         </div>
         <div class="s1-row">
           <div class="s1-col-1">
-            <img class="img1" src="./images/s1-1.png" />
-            <img class="img2" src="./images/s1-2.png" />
+            <img class="img1 wow bounceIn" src="./images/s1-1.png" />
+            <img class="img2 wow bounceIn" style="animation-delay: 0.5s;" src="./images/s1-2.png" />
             <img class="img3" src="./images/s1-3.png" />
             <div class="desktop">
               <!-- todo: 輪播效果 -->
-              <img class="img4" src="./images/s1-4.png" />
+              <img class="img4" src="./images/s1-step1.png" />
+              <img class="img4 wow fadeIn" style="animation-delay: 0.7s; animation-duration: 0.4s;" src="./images/s1-step2.png" />
+              <img class="img4 wow fadeIn" style="animation-delay: 1.4s; animation-duration: 0.4s;" src="./images/s1-step3.png" />
+              <img class="img4 wow fadeIn" style="animation-delay: 2.1s; animation-duration: 0.4s;" src="./images/s1-step4.png" />
+              <img class="img4 wow fadeIn" style="animation-delay: 2.8s; animation-duration: 0.4s;" src="./images/s1-step5.png" />
             </div>
             <img
               class="mobile s1-steps-mobile"
@@ -205,8 +209,8 @@
           <!-- right -->
           <div class="s2-col-2">
             <img class="woman-img" src="./images/s1-woman.png" />
-            <img class="star-small-img" src="./images/s2-star-small.png" />
-            <img class="star-large-img" src="./images/s2-star-large.png" />
+            <img class="star-small-img wow bounceIn" src="./images/s2-star-small.png" />
+            <img class="star-large-img wow bounceIn" style="animation-delay: 0.5s;" src="./images/s2-star-large.png" />
             <img class="title-img" src="./images/s2-title.png" />
             <a class="s2-action-link" href="">立即行動<img src="./images/white-triangle.jpg"></img></a>
           </div>
@@ -223,8 +227,8 @@
       <div class="s3-content">
         <div class="s3-row">
           <div class="s3-col-1">
-            <img class="star-small" src="./images/s3-star-small.png" />
-            <img class="star-large" src="./images/s3-star-large.png" />
+            <img class="star-small wow bounceIn" src="./images/s3-star-small.png" />
+            <img class="star-large wow bounceIn" style="animation-delay: 0.5s;" src="./images/s3-star-large.png" />
             <img class="title" src="./images/s3-title.png" />
             <img class="man" src="./images/s3-man.png" />
           </div>
@@ -399,6 +403,7 @@
           typeWords();
         }
       }
+      //
       function typeWords() {
         isTyping = true;
         const typingArea = $(".s1-words .black-rect");
