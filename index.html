@@ -87,24 +87,26 @@
         <div class="kv-3 desktop">
           <img src="./images/kv-3.png" />
         </div>
-        <div class="kv-4 desktop">
-          <img src="./images/kv-4.png" />
-        </div>
-        <div class="kv-6 desktop">
-          <img src="./images/kv-6.png" />
-        </div>
-        <div class="kv-message desktop">
-          <!-- 線上交易輕鬆投資<span class="yellow">USD <span class="larger">5,000</span></span>即可申購 -->
-          <w class="w1">線</w><w class="w2">上</w><w class="w3">交</w
-          ><w class="w4">易</w><w class="w5">輕</w><w class="w6">鬆</w
-          ><w class="w7">投</w><w class="w8">資</w><w class="w9 yellow">U</w
-          ><w class="w10 yellow">S</w><w class="w11 yellow">D</w
-          ><w class="w12 yellow larger">5</w><w class="w13 yellow larger">,</w
-          ><w class="w14 yellow larger">0</w><w class="w15 yellow larger">0</w
-          ><w class="w16 yellow larger">0</w><w class="w17">即</w
-          ><w class="w18">可</w><w class="w19">申</w><w class="w20">購 </w
-          ><w class="w21"><img class="kv-white-triangle" src="./images/white-triangle.jpg"></img></w>
-        </div>
+        <a href="#">
+          <div class="kv-4 desktop">
+            <img src="./images/kv-4.png" />
+          </div>
+          <div class="kv-6 desktop">
+            <img src="./images/kv-6.png" />
+          </div>
+          <div class="kv-message desktop">
+            <!-- 線上交易輕鬆投資<span class="yellow">USD <span class="larger">5,000</span></span>即可申購 -->
+            <w class="w1">線</w><w class="w2">上</w><w class="w3">交</w
+            ><w class="w4">易</w><w class="w5">輕</w><w class="w6">鬆</w
+            ><w class="w7">投</w><w class="w8">資</w><w class="w9 yellow">U</w
+            ><w class="w10 yellow">S</w><w class="w11 yellow">D</w
+            ><w class="w12 yellow larger">5</w><w class="w13 yellow larger">,</w
+            ><w class="w14 yellow larger">0</w><w class="w15 yellow larger">0</w
+            ><w class="w16 yellow larger">0</w><w class="w17">即</w
+            ><w class="w18">可</w><w class="w19">申</w><w class="w20">購 </w
+            ><w class="w21"><img class="kv-white-triangle" src="./images/white-triangle.jpg"></img></w>
+          </div>
+        </a>
         <div class="kv-5 desktop">
           <img src="./images/kv-5.png" alt="" />
         </div>
@@ -122,17 +124,21 @@
           <div class="s1-kv3">
             <img src="./images/kv-3.png" />
           </div>
+          
           <div class="s1-words">
-            <div class="black-rect">
-              <span class="larger">&nbsp</span>
-              <!-- 線上交易輕鬆投資<span class="yellow"
-                >USD <span class="larger">5,000</span></span
-              >即可申購-->
-            </div>
-            <div class="white-rect">
-              <img src="./images/kv-4.png">
-            </div>
+            <a class="rect-container" href="#">
+              <div class="black-rect">
+                <span class="larger">&nbsp</span>
+                <!-- 線上交易輕鬆投資<span class="yellow"
+                  >USD <span class="larger">5,000</span></span
+                >即可申購-->
+              </div>
+              <div class="white-rect">
+                <img src="./images/kv-4.png">
+              </div>
+            </a>
           </div>
+          
         </div>
         <div class="s1-row">
           <div class="s1-col-1">
@@ -375,6 +381,11 @@
       </div>
     </div>
 
+    <!-- Top -->
+    <div class="go-top">
+      Top
+    </div>
+
     <script>
       //
       new WOW().init();
@@ -425,7 +436,6 @@
           typingArea.html(typingArea.html() + words[i]);
           ++i;
           if (i >= words.length) {
-            console.log('stop typing')
             clearInterval(timer);
             setTimeout(function () {
               typingArea.html("<span class='larger'>&nbsp</span>")
@@ -435,12 +445,23 @@
         }, 160);
       }
       //
+      function checkGoTopButton() {
+        var y = $(this).scrollTop();
+        if (y > 300) {
+          $(".go-top").removeClass("hide-go-top").addClass("show-go-top");
+        } else {
+          $(".go-top").removeClass("show-go-top").addClass("hide-go-top");
+        }
+      }
+      //
       $(document).ready(function () {
         // When page loaded, check if typing is need
         checkTyping();
+        checkGoTopButton();
         // Or register typing handler when scroll
         $(document).scroll(function () {
           checkTyping();
+          checkGoTopButton();
         });
         //
         // Slide button
@@ -464,6 +485,13 @@
           const target = $(this).attr('go-to');
           $([document.documentElement, document.body]).animate({
               scrollTop: $(target).offset().top,
+            },
+            600
+          );
+        });
+        $(".go-top").click(function() {
+          $([document.documentElement, document.body]).animate({
+              scrollTop: 0,
             },
             600
           );
