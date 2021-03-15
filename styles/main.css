@@ -1194,3 +1194,9 @@ w {
   animation: hideGoTop .6s;
   animation-fill-mode: forwards;
 }
+
+@media (max-width: 800px) {
+  .go-top {
+    display: none;
+  }
+}
