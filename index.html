@@ -382,7 +382,7 @@
     </div>
 
     <!-- Top -->
-    <div class="go-top">
+    <div class="go-top hide">
       Top
     </div>
 
@@ -448,7 +448,7 @@
       function checkGoTopButton() {
         var y = $(this).scrollTop();
         if (y > 300) {
-          $(".go-top").removeClass("hide-go-top").addClass("show-go-top");
+          $(".go-top").removeClass("hide-go-top hide").addClass("show-go-top");
         } else {
           $(".go-top").removeClass("show-go-top").addClass("hide-go-top");
         }
@@ -457,7 +457,7 @@
       $(document).ready(function () {
         // When page loaded, check if typing is need
         checkTyping();
-        checkGoTopButton();
+        // checkGoTopButton();
         // Or register typing handler when scroll
         $(document).scroll(function () {
           checkTyping();
