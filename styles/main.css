@@ -359,6 +359,12 @@ w {
 .s1 {
   width: 100%;
   border-top: 4px solid black;
+  position: relative;
+}
+
+#sc-target1 {
+  position: absolute;
+  top: -50px;
 }
 
 .s1-content {
@@ -625,6 +631,18 @@ w {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   overflow: hidden;
+  position: relative;
+}
+
+#sc-target2 {
+  position: absolute;
+  top: -50px;
+}
+
+@media (max-width: 800px) {
+  #sc-target2 {
+    top: -80px;
+  }
 }
 
 .s2-content {
@@ -858,6 +876,18 @@ w {
 .s3 {
   width: 100%;
   background-color: #fff5da;
+  position: relative;
+}
+
+#sc-target3 {
+  position: absolute;
+  top: -85px;
+}
+
+@media (max-width: 800px) {
+  #sc-target3 {
+    top: -80px;
+  }
 }
 
 .s3-content {
