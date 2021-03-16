@@ -328,10 +328,11 @@ w {
 
 .kv-message {
   color: white;
-  font-size: 1.78vw;
+  font-size: 1.6vw;
   width: 40%;
   top: 61%;
-  left: 15.3%;
+  left: 16%;
+  letter-spacing: 1px;
   z-index: 1;
 }
 
@@ -346,7 +347,7 @@ w {
 
 @media (min-width: 1366px) {
   .kv-message {
-    font-size: 25px;
+    font-size: 22.5px;
     top: 61.4%;
   }
   .kv-message .larger {
