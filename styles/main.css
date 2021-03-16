@@ -118,7 +118,7 @@ header.menuArea {
 }
 
 w {
-  animation-name: show;
+  /* animation-name: show; */
   animation-duration: 8s;
   animation-fill-mode: backwards;
   animation-iteration-count: infinite;
@@ -187,6 +187,12 @@ w {
 }
 .w21 {
   animation-delay: 3s;
+}
+.w22 {
+  animation-delay: 3.1s;
+}
+.w23 {
+  animation-delay: 3.2s;
 }
 /* end animations */
 
@@ -322,10 +328,10 @@ w {
 
 .kv-message {
   color: white;
-  font-size: 1.85vw;
+  font-size: 1.78vw;
   width: 40%;
   top: 61%;
-  left: 16.9%;
+  left: 15.3%;
   z-index: 1;
 }
 
@@ -340,7 +346,7 @@ w {
 
 @media (min-width: 1366px) {
   .kv-message {
-    font-size: 26px;
+    font-size: 25px;
     top: 61.4%;
   }
   .kv-message .larger {
@@ -593,7 +599,7 @@ w {
     position: relative;
   }
   .s1-words .black-rect .larger {
-    font-size: 30px;
+    font-size: 29px;
   }
   .s1-words .white-rect {
     position: absolute;
@@ -606,7 +612,7 @@ w {
     width: 100%;
   }
   .s1-words .black-rect img {
-    width: 4.2%;
+    width: 3.4%;
     transform: translateY(-14%);
   }
   .s1 .s1-action-link img {
