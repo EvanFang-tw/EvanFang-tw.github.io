@@ -118,7 +118,7 @@ header.menuArea {
 }
 
 w {
-  /* animation-name: show; */
+  animation-name: show;
   animation-duration: 8s;
   animation-fill-mode: backwards;
   animation-iteration-count: infinite;
