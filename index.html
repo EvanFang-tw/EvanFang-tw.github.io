@@ -384,6 +384,40 @@
       Top
     </div>
 
+    <!-- online button pc -->
+    <div class="online-advise desktop">
+      <img src="./images/online-btn.png">
+    </div>
+    <div class="online-advise-m mobile">
+      <div class="online-advise-info-wrapper">
+        <img class="advise-woman-m" src="./images/advise-woman-m.jpg">
+        <p>空中理財規劃師免費諮詢</p>
+        <div class="advise-btn-m">
+          <img src="./images/advise-btn-m.png">
+        </div>
+      </div>
+    </div>
+    <div class="full-screen" style="display: none;">
+      <div class="advise-window desktop">
+        <img class="advise-window-bg" src="./images/advise-window-bg.png">
+        <img class="advise-window-close-btn" src="./images/advise-window-close-btn.png">
+        <a class="advise-window-contact-btn" target="_blank" href="https://webchat.ctbcbank.com/webchat/index?Skill=b_cso&Channel=WEB&KeywordEnabled=N&FromPageId=TW_FINCSO">
+          <img src="./images/advise-window-contact-btn.png">
+        </a>
+      </div>
+      <div class="advise-window-m mobile">
+        <img class="advise-window-bg-m" src="./images/advise-window-bg-m.png">
+        <img class="advise-window-close-btn-m" src="./images/advise-window-close-btn-m.png">
+        <a class="advise-window-tel-btn-m" href="tel:0221711918">
+          <img src="./images/advise-window-tel-btn-m.png">
+        </a>
+        <a class="advise-window-contact-btn-m" target="_blank" href="https://webchat.ctbcbank.com/webchat/index?Skill=b_cso&Channel=WEB&KeywordEnabled=N&FromPageId=TW_FINCSO">
+          <img src="./images/advise-window-contact-btn-m.png">
+        </a>
+      </div>
+      <div class="black-mask"></div>
+    </div>
+
     <script>
       //
       new WOW().init();
@@ -495,9 +529,17 @@
             600
           );
         });
+        //
+        // Online advise
+        $(".online-advise,.advise-btn-m").click(function() {
+          $(".full-screen").fadeIn();
+        });
+        $(".black-mask,.advise-window-close-btn,.advise-window-close-btn-m").click(function() {
+          $(".full-screen").fadeOut();
+        });
       });
     </script>
-    <!-- Tracking begin -->Ｆ
+    <!-- Tracking begin -->
     <script>
       var bigdata_infos = {
         'prodname': '債券',
