@@ -1243,6 +1243,10 @@ w {
   bottom: 180px;
   cursor: pointer;
 }
+.online-advise img {
+  width: 98px;
+  height: 113px;
+}
 .full-screen {
   position: fixed;
   width: 100%;
@@ -1337,5 +1341,12 @@ w {
   }
   .advise-window-contact-btn-m img {
     width: 100%
+  }
+  .advise-btn-m {
+    cursor: pointer;
+  }
+  .advise-btn-m img {
+    width: 127px;
+    height: 32px;
   }
 }
