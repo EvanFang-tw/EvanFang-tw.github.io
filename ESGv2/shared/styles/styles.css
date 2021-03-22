@@ -2663,10 +2663,10 @@ img {
 }
 
 .world-water-day {
-  width: 204px;
-  height: 155px;
+  width: 192px;
+  height: 183px;
   position: fixed;
   bottom: 5%;
-  right: 2%;
+  right: 1%;
   cursor: pointer;
 }

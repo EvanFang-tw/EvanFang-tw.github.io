@@ -44,6 +44,22 @@ a.link:active {
 }
 /* end reset */
 
+/* RWD pc mobile switch */
+.desktop {
+  display: inherit;
+}
+.mobile {
+  display: none;
+}
+@media (max-width: 800px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: inherit;
+  }
+}
+
 .hide-on-pc {
   display: none;
 }
@@ -57,45 +73,44 @@ a.link:active {
 /* main-section */
 .main-section-bg {
   width: 100%;
-  background-image: url("../../assets/images/water/main-blue-bg.png");
+  background-image: url("../../assets/images/water/main-green-bg.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
 .main-section {
-  /* max-width: 1920px; */
+  max-width: 1366px;
   margin: auto;
   overflow: hidden;
   position: relative;
-  padding-top: 44%;
+  padding-top: 57%;
 }
 
-.faucet {
+@media (min-width: 1366px) {
+  .main-section {
+    padding-top: 779px
+  }
+}
+
+.main-kv {
   position: absolute;
-  width: 72%;
-  left: 15%;
+  width: 100%;
+  left: 0%;
   top: 0%;
 }
 
-.butterfly-1 {
+.main-earth-title {
   position: absolute;
-  width: 3%;
-  left: 37%;
-  top: 10%;
+  width: 54%;
+  left: 39.8%;
+  top: 9%;
 }
 
-.butterfly-2 {
+.main-earth-info {
   position: absolute;
-  width: 2.8%;
-  left: 23%;
-  top: 27%;
-}
-
-.main-title {
-  position: absolute;
-  width: 36%;
-  left: 40%;
-  top: 11%;
+  width: 42.3%;
+  left: 46.3%;
+  top: 44.4%;
 }
 
 .main-mobile {
@@ -119,30 +134,110 @@ a.link:active {
     left: 0%;
     top: -14%;
   }
-  .main-info-m {
-    position: absolute;
-    width: 97%;
-    left: 2.6%;
-    top: 56%;
+}
+
+/* end main-section */
+
+/* cloud */
+.cloud {
+  position: relative;
+  margin-top: -10%;
+  overflow: hidden;
+}
+
+@media (min-width: 1920px) {
+  .cloud {
+    margin-top: -192px;
+  } 
+}
+
+.cloud img {
+  width: 100%;
+}
+
+/* earth1 */
+.earth1-wrapper {
+  width: 100%;
+}
+.earth1 {
+  max-width: 1366px;
+  margin: auto;
+  position: relative;
+  padding-top: 40%;
+}
+@media (min-width: 1366px) {
+  .earth1 {
+    padding-top: 547px;
   }
 }
-
-.main-info {
+.earth1 img {
   position: absolute;
-  width: 30%;
-  left: 44%;
-  top: 49%;
-
-  animation-delay: 0.2s;
 }
-
-.main-light {
+.earth1 p {
   position: absolute;
-  width: 37%;
-  left: 12.5%;
-  top: -9%;
+  font-size: 1.35vw;
+  letter-spacing: 1px;
 }
-/* end main-section */
+@media (min-width: 1366px) {
+  .earth1 p {
+    font-size: 18px;
+  }
+}
+.earth1-green-cloud {
+  width: 80%;
+  left: 10%;
+  top: 8%;
+}
+.earth1-1 {
+  width: 15.4%;
+  left: 16.8%;
+  top: -3%;
+}
+.earth1-2 {
+  width: 22%;
+  left: 38.7%;
+  top: -3%;
+}
+.earth1-3 {
+  width: 20.1%;
+  left: 64.3%;
+  top: -3%;
+}
+.earth1-p1 {
+  left: 16.3%;
+  top: 56%;
+}
+.earth1-p2 {
+  left: 40.4%;
+  top: 56%;
+}
+.earth1-p3 {
+  left: 65.3%;
+  top: 56%;
+}
+.earth1-p4 {
+  left: 29.6%;
+  top: 80%;
+  font-size: 1.6vw !important;
+  color: #00692c;
+  font-weight: bold;
+}
+@media (min-width: 1366px) {
+  .earth1-p4 {
+    font-size: 22px !important;
+  }
+}
+.earth-red-triangle-1 {
+  width: 1.7%;
+  left: 36.2%;
+  top: 57%;
+}
+.earth-red-triangle-2 {
+  width: 1.7%;
+  left: 61.3%;
+  top: 57%;
+}
+/* end earth1 */
 
 /* section-1 */
 .section-1 {
@@ -156,12 +251,6 @@ a.link:active {
   left: 14.6%;
   top: 32%;
   z-index: -1;
-}
-
-.section-1-wave {
-  width: 100%;
-  overflow: hidden;
-  margin-top: -3.6%;
 }
 
 .section-1-hint {
@@ -218,9 +307,6 @@ a.link:active {
     margin: auto;
     margin-top: 15px;
   }
-  .section-1-wave {
-    display: none;
-  }
   .section-1-table {
     display: none;
   }
@@ -272,7 +358,7 @@ a.link:active {
 
 /* section 2 */
 .section-2-bg {
-  background-color: #e8f5fb;
+  background-color: #f1f1f1;
 }
 
 .section-2 {
@@ -354,7 +440,7 @@ a.link:active {
 /* section 3 */
 .section-3-bg {
   width: 100%;
-  background-color: #e8f5fb;
+  background-color: #f1f1f1;
   background-image: url("../../assets/images/water/section-2-green-lines.png");
   background-repeat: no-repeat;
   background-position-y: 150%;
@@ -716,11 +802,11 @@ a.link:active {
 
 /* world-water-day */
 .world-water-day {
-  width: 204px;
-  height: 155px;
+  width: 192px;
+  height: 183px;
   position: fixed;
   bottom: 5%;
-  right: 2%;
+  right: 1%;
   cursor: pointer;
 }
 
