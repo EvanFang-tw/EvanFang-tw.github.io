@@ -126,13 +126,26 @@ a.link:active {
   }
   .main-section {
     max-width: 800px;
-    padding-top: 125%;
+    padding-top: 136%;
+    overflow: visible;
   }
-  .main-bg-m {
+  .main-earth-bg-m {
     position: absolute;
     width: 100%;
-    left: 0%;
-    top: -14%;
+    top: -10%;
+    left: 0;
+  }
+  .main-earth-title-m {
+    position: absolute;
+    width: 53.2%;
+    left: 44.4%;
+    top: 11%;
+  }
+  .main-earth-info-m {
+    position: absolute;
+    width: 95.4%;
+    left: 3.2%;
+    top: 54%;
   }
 }
 
@@ -236,6 +249,66 @@ a.link:active {
   width: 1.7%;
   left: 61.3%;
   top: 57%;
+}
+
+@media (max-width: 800px) {
+  .earth1 {
+    max-width: 800px;
+    padding-top: 136%;
+    overflow: hidden;
+  }
+  .earth1-1 {
+    width: 22.6%;
+    left: 9.4%;
+    top: 3.4%;
+  }
+  .earth1-2 {
+    width: 32%;
+    left: 4.8%;
+    top: 32%;
+  }
+  .earth1-3 {
+    width: 26.6%;
+    left: 8.4%;
+    top: 59%;
+  }
+  .earth-red-down-triangle-1 {
+    width: 8.4%;
+    left: 46.4%;
+    top: 27%;
+  }
+  .earth-red-down-triangle-2 {
+    width: 8.4%;
+    left: 46.4%;
+    top: 54.8%;
+  }
+  .earth1 p {
+    font-size: 3.6vw;
+  }
+  .earth1-p1 {
+    left: 38.5%;
+    top: 12%;
+  }
+  .earth1-p2 {
+    left: 38.5%;
+    top: 37%;
+  }
+  .earth1-p3 {
+    left: 38.5%;
+    top: 65%;
+  }
+  .earth1-p4 {
+    font-size: 3.4vw !important;
+    left: 6.8%;
+    top: 86%;
+    letter-spacing: 0px !important;
+  }
+  .earth1-green-cloud {
+    width: 286%;
+    left: -130%;
+    top: 4%;
+    max-width: none;
+  }
 }
 /* end earth1 */
 
@@ -463,7 +536,7 @@ a.link:active {
   text-align: center;
   font-size: 22px;
   margin-top: 3%;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 .subject-fund-container {
