@@ -1,0 +1,45 @@
+.features-star {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  width: 134px;
+  height: 51px;
+  margin: 30px auto 25px;
+  font-size: 17px;
+  color: #fff;
+  border-radius: 25px;
+  background-color: #c30712;
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.3);
+
+  &:before {
+    content: "";
+    width: 19px;
+    height: 19px;
+    margin-right: 10px;
+    background: url("../../assets/images/star.png") no-repeat center center;
+  }
+}
+
+.features-title {
+  h3 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+    color: #0F7979;
+  }
+
+  p {
+    margin-bottom: 30px;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .features-title {
+    h3 {
+      font-size: 20px;
+    }
+  }
+}
