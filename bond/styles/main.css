@@ -1034,6 +1034,39 @@ w {
 }
 /* end s3 */
 
+/* caution */
+.caution {
+  width: 100%;
+  background-color: #fff5dc;
+}
+.caution-content {
+  width: 100%;
+  max-width: 1366px;
+  margin: auto;
+  padding-top: 15px;
+  padding-bottom: 30px;
+}
+.caution-content p {
+  color: #1a7676;
+  letter-spacing: 1px;
+  text-align: center;
+  line-height: 30px;
+}
+@media (max-width: 800px) {
+  .caution-content {
+    max-width: 800px;
+    padding-top: 5px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .caution-content p {
+    letter-spacing: 0px;
+    text-align: left;
+    font-size: 14px;
+  }
+}
+/* end caution */
+
 /* 基金警語 */
 .section-warning-bg {
   background-color: #117676;
