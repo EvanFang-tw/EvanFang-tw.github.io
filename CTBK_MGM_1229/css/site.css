@@ -1,0 +1,198 @@
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  line-height: 1.5;
+  font-family: "Microsoft JhengHei", Hind, sans-serif, arial, sans-serif;
+}
+
+.small,
+small {
+  font-size: 80%;
+  font-weight: 400;
+}
+
+/* Header */
+.header {
+  background: #007e7e;
+  box-sizing: border-box;
+}
+
+.navbar-brand {
+  display: inline-block;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
+}
+
+.navbar {
+  padding-left: 16px;
+  max-width: 1024px;
+  margin: auto;
+  height: 58px;
+}
+
+.full-image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.center-image {
+  display: block;
+  max-width: 100%;
+  margin: auto;
+  padding: 0 15% 0 15%;
+}
+
+.bg {
+  background-size: cover;
+}
+
+.bg>img {
+  padding-top: 5%;
+}
+
+.line-filler {
+  padding: 1.75%;
+  display: inline-block;
+}
+
+.line-filler-small {
+  padding: .5%;
+  display: inline-block;
+}
+
+/* 禮物區塊 */
+.card-container {
+  display: flex;
+  max-width: 900px;
+  margin: auto;
+}
+
+.card-container>.small-card:first-child {
+  margin-left: 4%;
+}
+
+.card-container>.small-card:last-child {
+  margin-right: 4%;
+}
+
+/* 禮物卡 */
+.small-card {
+  flex: 1;
+  padding: 1.5%;
+}
+
+.small-card img {
+  max-width: 100%;
+}
+
+.present-remark {
+  max-width: 768px;
+  margin: auto;
+  color: white;
+  font-size: small;
+  line-height: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .present-remark {
+    padding: 0 2rem 0 2rem;
+  }
+}
+
+/* Footer */
+.footer {
+  background-color: #007e7e;
+  position: relative;
+}
+
+.footer .container {
+  z-index: 1;
+}
+
+.container {
+  max-width: 1024px;
+  margin: auto;
+}
+
+.footer .content {
+  text-align: center;
+  padding: 1rem;
+  color: white;
+}
+
+.gotop-btn {
+  z-index: 1;
+  position: absolute;
+  cursor: pointer;
+  width: 36px;
+  height: 36px;
+  right: 10px;
+  bottom: 60px;
+}
+
+@media (min-width: 768px) {
+  .gotop-btn {
+    width: 65px;
+    height: 65px;
+    right: 25px;
+    bottom: 75px;
+  }
+}
+
+.gotop-btn>img {
+  width: 100%;
+  height: 100%;
+}
+
+/* 活動注意事項按鈕 */
+.event-btn {
+  border: 1px solid rgb(0, 139, 141);
+  color: rgb(0, 139, 141);
+  text-align: center;
+  padding: .2rem 0 .2rem 0;
+  cursor: pointer;
+}
+
+.event-btn:hover {
+  background-color: rgb(222, 222, 222);
+}
+
+.ct-link {
+  color: rgb(0, 139, 141);
+}
+
+.list-item-container {
+  line-height: 1.75rem;
+}
+
+.list-item {
+  padding: 1.5em 0 1.5em .5em;
+  display: flex;
+  border-bottom: 1px solid rgb(182, 182, 182);
+}
+
+/* .list-item-container .list-item:first-child {
+  padding-top: 2em;
+} */
+
+.list-item-container .list-item:last-child {
+  border-bottom: none;
+}
+
+.list-number {
+  color: rgb(0, 139, 141);
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 1.75rem;
+}
