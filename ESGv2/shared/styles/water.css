@@ -215,6 +215,7 @@ a.link:active {
 .earth1-p1 {
   left: 23.3%;
   top: 50.1%;
+  max-width: 13% !important;
 }
 .earth1-p2 {
   left: 43.2%;
@@ -291,7 +292,6 @@ a.link:active {
     left: 38.5%;
     top: 12%;
     max-width: 51% !important;
-    max-width: 13% !important;
   }
   .earth1-p2 {
     left: 38.5%;
@@ -302,7 +302,7 @@ a.link:active {
     top: 65%;
   }
   .earth1-p4 {
-    font-size: 3.4vw !important;
+    font-size: 3.6vw !important;
     left: 0%;
     top: 86%;
     width: 100%;
