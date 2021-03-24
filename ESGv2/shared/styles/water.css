@@ -79,14 +79,14 @@ a.link:active {
 }
 
 .main-section {
-  max-width: 1366px;
+  max-width: 1920px;
   margin: auto;
   overflow: hidden;
   position: relative;
-  padding-top: 57%;
+  padding-top: 40.7%;
 }
 
-@media (min-width: 1366px) {
+@media (min-width: 1920px) {
   .main-section {
     padding-top: 779px
   }
@@ -94,23 +94,23 @@ a.link:active {
 
 .main-kv {
   position: absolute;
-  width: 100%;
-  left: 0%;
+  width: 68%;
+  left: 17%;
   top: 0%;
 }
 
 .main-earth-title {
   position: absolute;
-  width: 54%;
-  left: 39.8%;
+  width: 36.5%;
+  left: 43.7%;
   top: 9%;
 }
 
 .main-earth-info {
   position: absolute;
-  width: 42.3%;
-  left: 46.3%;
-  top: 44.4%;
+  width: 29%;
+  left: 48%;
+  top: 41%;
 }
 
 .main-mobile {
