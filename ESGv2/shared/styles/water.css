@@ -188,13 +188,9 @@ a.link:active {
 }
 .earth1 p {
   position: absolute;
-  font-size: 0.95vw;
+  font-size: 18px;
   letter-spacing: 1px;
-}
-@media (min-width: 1920px) {
-  .earth1 p {
-    font-size: 18px;
-  }
+  max-width: 14%;
 }
 .earth1-green-cloud {
   width: 61%;
@@ -203,7 +199,7 @@ a.link:active {
 }
 .earth1-1 {
   width: 11%;
-  left: 26.4%;
+  left: 23.4%;
   top: -3%;
 }
 .earth1-2 {
@@ -213,11 +209,11 @@ a.link:active {
 }
 .earth1-3 {
   width: 14.6%;
-  left: 60.2%;
+  left: 63.2%;
   top: -3%;
 }
 .earth1-p1 {
-  left: 26.3%;
+  left: 23.3%;
   top: 50.1%;
 }
 .earth1-p2 {
@@ -225,29 +221,27 @@ a.link:active {
   top: 50.1%;
 }
 .earth1-p3 {
-  left: 61%;
+  left: 64%;
   top: 50.1%;
 }
 .earth1-p4 {
-  left: 34.9%;
+  /* left: 34.9%; */
   top: 77%;
-  font-size: 1.15vw !important;
+  font-size: 24px !important;
+  max-width: 100% !important;
+  width: 100%;
+  text-align: center;
   color: #00692c;
   font-weight: bold;
 }
-@media (min-width: 1920px) {
-  .earth1-p4 {
-    font-size: 22px !important;
-  }
-}
 .earth-red-triangle-1 {
   width: 1.2%;
-  left: 40.1%;
+  left: 39.2%;
   top: 51%;
 }
 .earth-red-triangle-2 {
   width: 1.2%;
-  left: 58%;
+  left: 60%;
   top: 51%;
 }
 
