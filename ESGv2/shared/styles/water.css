@@ -173,14 +173,14 @@ a.link:active {
   width: 100%;
 }
 .earth1 {
-  max-width: 1366px;
+  max-width: 1920px;
   margin: auto;
   position: relative;
-  padding-top: 40%;
+  padding-top: 30%;
 }
-@media (min-width: 1366px) {
+@media (min-width: 1920px) {
   .earth1 {
-    padding-top: 547px;
+    padding-top: 576px;
   }
 }
 .earth1 img {
@@ -188,67 +188,67 @@ a.link:active {
 }
 .earth1 p {
   position: absolute;
-  font-size: 1.35vw;
+  font-size: 0.95vw;
   letter-spacing: 1px;
 }
-@media (min-width: 1366px) {
+@media (min-width: 1920px) {
   .earth1 p {
     font-size: 18px;
   }
 }
 .earth1-green-cloud {
-  width: 80%;
-  left: 10%;
-  top: 8%;
+  width: 61%;
+  left: 18%;
+  top: 3%;
 }
 .earth1-1 {
-  width: 15.4%;
-  left: 16.8%;
+  width: 11%;
+  left: 26.4%;
   top: -3%;
 }
 .earth1-2 {
-  width: 22%;
-  left: 38.7%;
+  width: 15.6%;
+  left: 42%;
   top: -3%;
 }
 .earth1-3 {
-  width: 20.1%;
-  left: 64.3%;
+  width: 14.6%;
+  left: 60.2%;
   top: -3%;
 }
 .earth1-p1 {
-  left: 16.3%;
-  top: 56%;
+  left: 26.3%;
+  top: 50.1%;
 }
 .earth1-p2 {
-  left: 40.4%;
-  top: 56%;
+  left: 43.2%;
+  top: 50.1%;
 }
 .earth1-p3 {
-  left: 65.3%;
-  top: 56%;
+  left: 61%;
+  top: 50.1%;
 }
 .earth1-p4 {
-  left: 29.6%;
-  top: 80%;
-  font-size: 1.6vw !important;
+  left: 34.9%;
+  top: 77%;
+  font-size: 1.15vw !important;
   color: #00692c;
   font-weight: bold;
 }
-@media (min-width: 1366px) {
+@media (min-width: 1920px) {
   .earth1-p4 {
     font-size: 22px !important;
   }
 }
 .earth-red-triangle-1 {
-  width: 1.7%;
-  left: 36.2%;
-  top: 57%;
+  width: 1.2%;
+  left: 40.1%;
+  top: 51%;
 }
 .earth-red-triangle-2 {
-  width: 1.7%;
-  left: 61.3%;
-  top: 57%;
+  width: 1.2%;
+  left: 58%;
+  top: 51%;
 }
 
 @media (max-width: 800px) {
