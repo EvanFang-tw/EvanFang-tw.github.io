@@ -234,6 +234,11 @@ a.link:active {
   color: #00692c;
   font-weight: bold;
 }
+@media (max-width:1095px) {
+  .earth1-p4 {
+    top: 82%;
+  }
+}
 .earth-red-triangle-1 {
   width: 1.2%;
   left: 39.2%;
@@ -250,6 +255,9 @@ a.link:active {
     max-width: 800px;
     padding-top: 136%;
     overflow: hidden;
+  }
+  .earth1 p {
+    max-width: 55%;
   }
   .earth1-1 {
     width: 22.6%;
@@ -282,6 +290,7 @@ a.link:active {
   .earth1-p1 {
     left: 38.5%;
     top: 12%;
+    max-width: 51% !important;
   }
   .earth1-p2 {
     left: 38.5%;
@@ -293,8 +302,10 @@ a.link:active {
   }
   .earth1-p4 {
     font-size: 3.4vw !important;
-    left: 6.8%;
+    left: 0%;
     top: 86%;
+    width: 100%;
+    text-align: center;
     letter-spacing: 0px !important;
   }
   .earth1-green-cloud {
