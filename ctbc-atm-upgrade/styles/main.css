@@ -264,9 +264,13 @@ img {
   margin-bottom: 4%;
 }
 
+.section1-img-container {
+  text-align: center;
+}
+
 #section1-img1 {
-  width: 37%;
-  margin-left: 11%;
+  width: 51%;
+  margin: auto;
   display: inline-block;
 }
 
@@ -277,27 +281,27 @@ img {
 }
 
 #section1-row2 {
-  margin-top: -2%;
+  margin-top: -4%;
   padding-bottom: 2.5%;
 }
 
 #section1-img3 {
-  width: 25%;
-  margin-left: 8%;
+  width: 28%;
+  margin-left: 4%;
   display: inline-block;
 }
 
 #section-1-btn {
   width: 36%;
   display: inline-block;
-  margin-top: 3%;
-  margin-left: -1%;
+  margin-top: 6%;
+  /* margin-left: -1%; */
 }
 
 #section1-img4 {
-  width: 18%;
+  width: 21%;
   display: inline-block;
-  margin-left: 1%;
+  margin-left: 2%;
 }
 
 @media (max-width: 800px) {
