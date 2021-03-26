@@ -32,6 +32,23 @@ img {
   display: block;
 }
 
+/* RWD pc mobile switch */
+.desktop {
+  display: inherit;
+}
+.mobile {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: inherit;
+  }
+}
+
 #header {
   background-color: #117676;
   width: 100%;
@@ -271,7 +288,7 @@ img {
 #section1-img1 {
   width: 51%;
   margin: auto;
-  display: inline-block;
+  /* display: inline-block; */
 }
 
 #section1-img2 {
@@ -336,7 +353,7 @@ img {
     margin-right: 7%;
     margin-bottom: 5%;
   }
-  #section1-img1 {
+  #section1-img1-m {
     width: 76%;
     margin-left: 12%;
     display: block;
