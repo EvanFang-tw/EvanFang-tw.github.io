@@ -178,6 +178,13 @@ a.link:active {
   position: relative;
   padding-top: 30%;
 }
+#earth {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  left: 0;
+  top: -30%;
+}
 @media (min-width: 1920px) {
   .earth1 {
     padding-top: 576px;
@@ -251,6 +258,9 @@ a.link:active {
 }
 
 @media (max-width: 800px) {
+  #earth {
+    top: -10%;
+  }
   .earth1 {
     max-width: 800px;
     padding-top: 136%;
