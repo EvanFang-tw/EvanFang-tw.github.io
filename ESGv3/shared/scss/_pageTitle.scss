@@ -1,0 +1,121 @@
+@media only screen and (min-width: 769px) {
+  #page-title {
+    text-align: center;
+
+    h2 {
+      flex-direction: row;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 36px;
+      color: #0F7979;
+
+      &:before,
+      &:after {
+        content: "";
+        display: block;
+        width: 47px;
+        height: 31px;
+        margin: 0 10px;
+        background: no-repeat center center;
+      }
+
+      &:before {
+        background-image: url("../../assets/images/icon-left.png");
+      }
+
+      &:after {
+        background-image: url("../../assets/images/icon-right.png");
+      }
+    }
+
+    h3 {
+      margin: 10px 0;
+      color: #000;
+      font-size: 30px;
+    }
+
+    h4 {
+      color: #888;
+      font-size: 30px;
+    }
+
+    p {
+      flex-direction: row;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+      font-size: 12px;
+
+      &:before {
+        content: "";
+        display: block;
+        width: 16px;
+        height: 18px;
+        margin-right: 5px;
+        background: url("../../assets/images/book.png") no-repeat center center;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+  #page-title {
+    text-align: center;
+
+    h2 {
+      flex-direction: row;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      color: #0f7979;
+
+      &:before,
+      &:after {
+        content: "";
+        width: 33px;
+        height: 21px;
+        margin: 0 10px;
+        background: no-repeat center center;
+        background-size: contain;
+      }
+
+      &:before {
+        background-image: url("../../assets/images/icon-left.png");
+      }
+
+      &:after {
+        background-image: url("../../assets/images/icon-right.png");
+      }
+    }
+
+    h3 {
+      margin: 10px 0;
+      color: #000;
+      font-size: 18px;
+    }
+
+    h4 {
+      color: #888;
+      font-size: 18px;
+    }
+
+    p {
+      margin-top: 10px;
+      font-size: 12px;
+
+      &:before {
+        content: "";
+        width: 16px;
+        height: 18px;
+        margin-right: 5px;
+        background: url("../../assets/images/book.png") no-repeat center center;
+      }
+    }
+  }
+}

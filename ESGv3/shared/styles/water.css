@@ -1,0 +1,970 @@
+/* reset */
+body {
+  /* clear style.css's min-width: 1366px */
+  min-width: 0px;
+}
+
+body,
+div,
+ul,
+img {
+  margin: 0;
+}
+
+b {
+  font-weight: bolder;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border: 0;
+}
+
+a.link:link {
+  color: #24a09a;
+  border-bottom: 1px solid #24a09a;
+}
+
+a.link:visited {
+  color: #24a09a;
+}
+
+a.link:hover {
+  color: #24a09a;
+}
+
+a.link:active {
+  color: #24a09a;
+}
+/* end reset */
+
+/* RWD pc mobile switch */
+.desktop {
+  display: inherit;
+}
+.mobile {
+  display: none;
+}
+@media (max-width: 800px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: inherit;
+  }
+}
+
+.hide-on-pc {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .hide-on-pc {
+    display: block;
+  }
+}
+
+/* main-section */
+.main-section-bg {
+  width: 100%;
+  background-image: url("../../assets/images/water/main-green-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.main-section {
+  max-width: 1920px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  padding-top: 40.7%;
+}
+
+@media (min-width: 1920px) {
+  .main-section {
+    padding-top: 779px
+  }
+}
+
+.main-kv {
+  position: absolute;
+  width: 68%;
+  left: 15.5%;
+  top: 0%;
+}
+
+.main-earth-title {
+  position: absolute;
+  width: 38.5%;
+  left: 42.7%;
+  top: 9%;
+}
+
+.main-earth-info {
+  position: absolute;
+  width: 30.1%;
+  left: 47.3%;
+  top: 43%;
+}
+
+.main-mobile {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .main-pc {
+    display: none;
+  }
+  .main-mobile {
+    display: block;
+  }
+  .main-section {
+    max-width: 800px;
+    padding-top: 136%;
+    overflow: visible;
+  }
+  .main-earth-bg-m {
+    position: absolute;
+    width: 100%;
+    top: -10%;
+    left: 0;
+  }
+  .main-earth-title-m {
+    position: absolute;
+    width: 53.2%;
+    left: 44.4%;
+    top: 11%;
+  }
+  .main-earth-info-m {
+    position: absolute;
+    width: 95.4%;
+    left: 3.2%;
+    top: 54%;
+  }
+}
+
+/* end main-section */
+
+/* cloud */
+.cloud {
+  position: relative;
+  margin-top: -10%;
+  overflow: hidden;
+}
+
+@media (min-width: 1920px) {
+  .cloud {
+    margin-top: -192px;
+  } 
+}
+
+.cloud img {
+  width: 100%;
+}
+
+/* earth1 */
+.earth1-wrapper {
+  width: 100%;
+}
+.earth1 {
+  max-width: 1920px;
+  margin: auto;
+  position: relative;
+  padding-top: 30%;
+}
+#earth {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  left: 0;
+  top: -30%;
+}
+@media (min-width: 1920px) {
+  .earth1 {
+    padding-top: 576px;
+  }
+}
+.earth1 img {
+  position: absolute;
+}
+.earth1 p {
+  position: absolute;
+  font-size: 18px;
+  letter-spacing: 1px;
+  max-width: 14%;
+}
+.earth1-green-cloud {
+  width: 61%;
+  left: 18%;
+  top: 3%;
+}
+.earth1-1 {
+  width: 11%;
+  left: 23.4%;
+  top: -3%;
+}
+.earth1-2 {
+  width: 15.6%;
+  left: 42%;
+  top: -3%;
+}
+.earth1-3 {
+  width: 14.6%;
+  left: 63.2%;
+  top: -3%;
+}
+.earth1-p1 {
+  left: 23.3%;
+  top: 50.1%;
+  max-width: 13% !important;
+}
+.earth1-p2 {
+  left: 43.2%;
+  top: 50.1%;
+}
+.earth1-p3 {
+  left: 64%;
+  top: 50.1%;
+}
+.earth1-p4 {
+  /* left: 34.9%; */
+  top: 77%;
+  font-size: 24px !important;
+  max-width: 100% !important;
+  width: 100%;
+  text-align: center;
+  color: #00692c;
+}
+@media (max-width:1095px) {
+  .earth1-p4 {
+    top: 82%;
+  }
+}
+.earth-red-triangle-1 {
+  width: 1.2%;
+  left: 39.2%;
+  top: 51%;
+}
+.earth-red-triangle-2 {
+  width: 1.2%;
+  left: 60%;
+  top: 51%;
+}
+
+@media (max-width: 800px) {
+  #earth {
+    top: -10%;
+  }
+  .earth1 {
+    max-width: 800px;
+    padding-top: 136%;
+    overflow: hidden;
+  }
+  .earth1 p {
+    max-width: 55%;
+    font-size: 16px;
+  }
+  .earth1-1 {
+    width: 22.6%;
+    left: 9.4%;
+    top: 3.4%;
+  }
+  .earth1-2 {
+    width: 32%;
+    left: 4.8%;
+    top: 32%;
+  }
+  .earth1-3 {
+    width: 26.6%;
+    left: 8.4%;
+    top: 59%;
+  }
+  .earth-red-down-triangle-1 {
+    width: 8.4%;
+    left: 46.4%;
+    top: 27%;
+  }
+  .earth-red-down-triangle-2 {
+    width: 8.4%;
+    left: 46.4%;
+    top: 54.8%;
+  }
+  .earth1-p1 {
+    left: 38.5%;
+    top: 12%;
+    max-width: 51% !important;
+  }
+  .earth1-p2 {
+    left: 38.5%;
+    top: 37%;
+  }
+  .earth1-p3 {
+    left: 38.5%;
+    top: 65%;
+  }
+  .earth1-p4 {
+    font-size: 17px !important;
+    left: 0%;
+    top: 86%;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+    letter-spacing: 0px !important;
+  }
+  .earth1-green-cloud {
+    width: 286%;
+    left: -130%;
+    top: 4%;
+    max-width: none;
+  }
+}
+/* end earth1 */
+
+/* section-1 */
+.section-1 {
+  position: relative;
+  padding-bottom: 5%;
+}
+
+.section-1-cloud-bg {
+  position: absolute;
+  width: 70%;
+  left: 14.6%;
+  top: 32%;
+  z-index: -1;
+}
+
+.section-1-hint {
+  text-align: center;
+  font-size: 18px;
+}
+
+.section-1-table-m {
+  display: none;
+}
+
+.section-1-table {
+  width: 47.5%;
+  margin: auto;
+  margin-top: 3%;
+
+  animation-delay: 0.2s;
+}
+
+.section-1-table-image-holder {
+  padding: 6.5%;
+}
+
+.section-1-table-text {
+  text-align: center;
+  font-size: 16px;
+  padding-bottom: 1%;
+}
+
+.title-row td {
+  font-size: 23px;
+  padding-top: 3%;
+  padding-bottom: 2%;
+}
+
+.section-1-table-text.gray-text {
+  color: #3d3d3d;
+}
+
+.section-1-slogan {
+  text-align: center;
+  color: #005a98;
+  font-size: 24px;
+  margin-top: 2%;
+}
+
+@media (max-width: 800px) {
+  .section-1 {
+    padding-bottom: 10%;
+  }
+  .section-1-hint {
+    font-size: 16px;
+    width: 72%;
+    margin: auto;
+    margin-top: 15px;
+  }
+  .section-1-table {
+    display: none;
+  }
+  .section-1-cloud-bg {
+    display: none;
+  }
+  .section-1-cloud-bg img {
+    height: 100%;
+  }
+  .section-1-table-m {
+    display: flex;
+    width: 100%;
+    padding-right: 15%;
+    padding-left: 15%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+
+    background-image: url("../../assets/images/water/section-1-cloud-bg.png");
+    background-repeat: no-repeat;
+    background-size: 120% 100%;
+    background-position-x: 50%;
+  }
+  .section-1-table-m div {
+    text-align: center;
+    width: 50%;
+  }
+  .section-1-table-m div img {
+    padding: 8%;
+  }
+  .section-1-table-m div h4 {
+    font-size: 20px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+  .section-1-table-m div p {
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+  .section-1-slogan {
+    font-size: 17px;
+    width: 90%;
+    margin: auto;
+  }
+}
+/* end section-1 */
+
+/* section 2 */
+.section-2-bg {
+  background-color: #f1f1f1;
+}
+
+.section-2 {
+  width: 100%;
+  position: relative;
+  padding-top: 24%;
+}
+
+.section-2-dialog-1 {
+  position: absolute;
+  width: 16%;
+  left: 30.8%;
+  top: 8%;
+
+  animation-delay: 0.2s;
+}
+
+.section-2-dialog-2 {
+  position: absolute;
+  width: 14.7%;
+  left: 54%;
+  top: 10%;
+
+  animation-delay: 1s;
+}
+
+.section-2-man {
+  position: absolute;
+  width: 6.3%;
+  left: 31.7%;
+  top: 48%;
+}
+
+.section-2-woman {
+  position: absolute;
+  width: 5.8%;
+  left: 61.1%;
+  top: 50%;
+}
+
+.section-2-earth {
+  position: absolute;
+  width: 23.7%;
+  left: 37.9%;
+  top: 42%;
+}
+
+@media (max-width: 800px) {
+  .section-2 {
+    padding-top: 84%;
+  }
+  .section-2-dialog-1 {
+    width: 50%;
+    left: 7%;
+    top: 6%;
+  }
+  .section-2-dialog-2 {
+    width: 46.4%;
+    left: 46.6%;
+    top: 31%;
+  }
+  .section-2-man {
+    width: 22%;
+    left: 7%;
+    top: 42.5%;
+  }
+  .section-2-woman {
+    width: 19.4%;
+    left: 75.6%;
+    top: 47.5%;
+  }
+  .section-2-earth {
+    width: 59.2%;
+    left: 20.6%;
+    top: 58.5%;
+  }
+}
+
+/* section 3 */
+.section-3-bg {
+  width: 100%;
+  background-color: #f1f1f1;
+  background-image: url("../../assets/images/water/section-2-green-lines.png");
+  background-repeat: no-repeat;
+  background-position-y: 150%;
+  background-position-x: 68%;
+}
+
+.section-3 {
+  padding-bottom: 2%;
+}
+
+.section-3-information {
+  background-color: white;
+  border: 5px solid #89c9c9;
+  width: 50%;
+  margin: auto;
+  padding-bottom: 18px;
+}
+
+.section-3-information .p1 {
+  text-align: center;
+  font-size: 22px;
+  margin-top: 3%;
+  letter-spacing: 1px;
+}
+
+.subject-fund-container {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1%;
+}
+
+.subject-fund-title {
+  min-width: 280px;
+  text-align: center;
+  font-size: 40px;
+  letter-spacing: 1px;
+  color: #117676;
+}
+
+.subject-fund-line {
+  width: 24%;
+  height: 2px;
+  background-color: #117676;
+}
+
+.section-3-information .p2 {
+  font-weight: bold;
+  text-align: center;
+  font-size: 26px;
+  letter-spacing: 1px;
+  margin-top: -20px;
+}
+
+.section-3-information .p2 span.red {
+  color: #e74700;
+  font-size: 48px;
+}
+
+.section-3-information .green-line {
+  height: 2px;
+  width: 70%;
+  margin: auto;
+  background-color: #117676;
+  margin-top: 1.5%;
+  margin-bottom: 1.5%;
+}
+
+.section-3-information .p3 {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 1.5%;
+  letter-spacing: 2px;
+}
+
+.section-3-information .p4 {
+  color: white;
+  background-color: #117676;
+  margin: auto;
+  width: 90%;
+  text-align: center;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  font-size: 24px;
+  margin-top: 2.8%;
+}
+
+.funds {
+  margin: auto;
+  margin-top: 1%;
+  width: 85%;
+}
+
+.fund-row {
+  margin-bottom: 2px;
+  border-bottom: 1px solid #c9c9c9;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fund-name {
+  font-size: 18px;
+}
+
+.fund-row:last-child {
+  border: none;
+}
+
+.fund-row img {
+  /* green dot */
+  width: 7px;
+  height: 7px;
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 2px;
+}
+
+.fund-link {
+  min-width: 110px;
+}
+
+.fund-link a {
+  background-color: #e74700;
+  color: white;
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 16px;
+}
+
+.fund-link a img {
+  /* white right triangle */
+  width: 10px;
+  height: 12px;
+  vertical-align: middle;
+}
+
+@media (max-width: 800px) {
+  .section-3-bg {
+    background-image: none;
+  }
+  .section-3 {
+    padding-bottom: 8%;
+  }
+  .section-3-information {
+    border: 3px solid #89c9c9;
+    width: 96%;
+    padding-bottom: 18px;
+  }
+  .section-3-information .p1 {
+    margin-top: 6%;
+    font-size: 15px;
+  }
+  .subject-fund-container {
+    display: block;
+  }
+  .subject-fund-title {
+    font-size: 30px;
+  }
+  .subject-fund-line {
+    display: none;
+  }
+  .section-3-information .p2 {
+    font-size: 18px;
+    margin-top: 2%;
+    line-height: 29px;
+  }
+  .section-3-information .p2 span.red {
+    font-size: 39px;
+  }
+  /* .section-3-information .p2 .block-m {
+    margin-top: 5%;
+    display: block;
+  } */
+  .section-3-information .p2 span {
+    letter-spacing: 4px;
+  }
+  .section-3-information .green-line {
+    width: 88%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  .section-3-information .p3 {
+    font-size: 12px;
+    margin-top: 4%;
+    margin-bottom: 7%;
+  }
+  .section-3-information .p4 {
+    display: none;
+  }
+  .fund-row {
+    display: block;
+  }
+  .fund-name img {
+    display: none;
+  }
+  .fund-name {
+    text-align: center;
+  }
+  .fund-name b {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 1px;
+  }
+  .fund-name p {
+    font-size: 16px;
+  }
+  .fund-link {
+    width: 118px;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .fund-link a {
+    font-size: 14px;
+  }
+}
+/* end section 3 */
+
+/* end section 2 */
+
+/* 基金警語 */
+.section-warning-bg {
+  background-color: #f1f1f1;
+  width: 100%;
+}
+
+.section-warning-switch {
+  background-color: #117676;
+  text-align: center;
+  padding-top: 30px;
+  /* padding-bottom: 25px; */
+}
+
+.white-line {
+  height: 1px;
+  width: 100%;
+  background-color: white;
+  opacity: 0.5;
+  margin-top: 25px;
+}
+
+.switch-btn {
+  color: white;
+  font-size: 21px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.arrow-img {
+  display: inline-block;
+  width: 10px;
+  height: 12px;
+  cursor: pointer;
+}
+
+.arrow-right {
+  transform: translateY(-2px);
+}
+
+.arrow-down {
+  transform: translateY(-2px) rotate(90deg);
+}
+
+.section-warning {
+  width: 58%;
+  margin: auto;
+  padding-bottom: 30px;
+}
+
+.section-warning ul {
+  list-style: disc;
+  padding: revert;
+}
+
+.section-warning ul li {
+  color: #373743;
+  margin-bottom: 21px;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 1px;
+}
+
+.section-warning ul li:first-child {
+  margin-top: 21px;
+}
+
+.section-warning ul li:last-child {
+  margin-bottom: 0px;
+}
+
+.section-warning-2 ul {
+  list-style: disc;
+  padding: revert;
+}
+
+.section-warning-2 ul li {
+  color: #ffffff;
+  margin-bottom: 21px;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 1px;
+}
+
+.section-warning-2 ul li:last-child {
+  margin-bottom: 0px;
+}
+
+@media (max-width: 800px) {
+  .switch-btn {
+    font-size: 18px;
+  }
+  .section-warning {
+    width: 90%;
+    margin: auto;
+    margin-left: 2.8%;
+  }
+  .section-warning ul li {
+    font-size: 16px;
+  }
+  .section-warning-2 ul li {
+    font-size: 16px;
+  }
+  .section-warning ul li {
+    margin-bottom: 18px;
+  }
+  .section-warning ul li:first-child {
+    margin-top: 18px;
+  }
+}
+
+/* footer */
+.footer-bg {
+  background-color: #005050;
+  width: 100%;
+}
+
+.footer {
+  text-align: center;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.footer > span {
+  color: white;
+  font-size: 14px;
+}
+
+/* world-water-day */
+.world-water-day {
+  width: 192px;
+  height: 183px;
+  position: fixed;
+  bottom: 5%;
+  right: 1%;
+  cursor: pointer;
+}
+
+.world-water-day-m {
+  display: none;
+}
+
+.world-water-day-m-fixed {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .world-water-day {
+    display: none;
+  }
+  .world-water-day-m {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 63px;
+    background-image: linear-gradient(to bottom, #0cc3ff, #005895);
+    z-index: 9999;
+  }
+  .water-layout {
+    padding-bottom: 63px;
+  }
+  .promotion-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .world-water-day-m p {
+    color: white;
+    font-size: 17px;
+  }
+  .golden-promotion {
+    color: white;
+    font-size: 16px;
+    background-image: url("../../assets/images/water/golden-brown-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    border-radius: 16px;
+    width: 173px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    cursor: pointer;
+  }
+  .golden-promotion img {
+    display: inline;
+    width: 11px;
+    height: 13px;
+  }
+}
+/* end world-water-day */
+
+@media (max-width: 800px) {
+  #layout #home {
+    padding-bottom: 59px;
+  }
+  #layout #esg {
+    padding-bottom: 59px;
+  }
+}
+
+@media (max-width: 768px) {
+  .water-fund-up-768 {
+    bottom: 59px;
+  }
+}
