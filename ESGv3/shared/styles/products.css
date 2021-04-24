@@ -11,3 +11,23 @@
 #pkv img {
   width: 100%;
 }
+
+/* plist */
+#plist-bg {
+  background-color: #e8f6f6;
+  width: 100%;
+  padding-top: 50px;
+}
+
+#plist-title {
+  margin-left: 25.6%;
+  font-size: 30px;
+  color: #0f7979;
+}
+
+#plist {
+  width: 52%;
+  margin: auto;
+  background-color: white;
+  border: solid 1px #139299;
+}
