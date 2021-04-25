@@ -98,6 +98,17 @@
   padding-top: 3px;
   text-align: center;
   font-size: 18px;
+  transition: background-color 0.4s, color 0.4s;
+}
+
+.white-btn:hover {
+  background-color: #139299;
+  color: white;
+}
+
+.white-btn-selected {
+  background-color: #139299;
+  color: white;
 }
 
 .gray-line {
