@@ -1,3 +1,7 @@
+.pcontainer {
+  min-width: 900px;
+}
+
 #pkv-bg {
   width: 100%;
   background-color: #074b4a;
@@ -6,18 +10,6 @@
 #pkv {
   width: 71.1%;
   margin: auto;
-}
-
-#pkv img {
-  width: 100%;
-}
-
-/* plist */
-.spaceleft {
-  margin-left: 3.5%;
-}
-.spaceright {
-  margin-right: 3.5%;
 }
 
 #plist-bg {
@@ -31,6 +23,18 @@
   margin-bottom: 30px;
   font-size: 30px;
   color: #0f7979;
+}
+
+#pkv img {
+  width: 100%;
+}
+
+/* plist */
+.spaceleft {
+  margin-left: 3.5%;
+}
+.spaceright {
+  margin-right: 3.5%;
 }
 
 #plist {
@@ -145,4 +149,60 @@
 
 #content {
   padding-top: 65px;
+}
+@media (max-width: 800px) {
+  #pkv {
+    width: 90%;
+  }
+  #plist-bg {
+    padding-top: 26px;
+    font-size: 26px;
+  }
+  #plist-title {
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  #plist {
+    width: 90%;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 30px;
+    padding-bottom: 63px;
+  }
+  .prow {
+    display: block;
+  }
+  .spaceleft {
+    margin-left: 2%;
+  }
+  .spaceright {
+    margin-right: 2%;
+  }
+  .prow-items {
+    margin-bottom: 15px;
+  }
+  .gray-line {
+    margin-top: 22px;
+    margin-bottom: 22px;
+  }
+  #tree-container {
+    background-image: linear-gradient(#e8f6f6, white);
+    padding-bottom: 18.5%;
+  }
+  #tree1 {
+    width: 74%;
+    left: 13.2%;
+    top: -15%;
+  }
+  #tree2 {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .pcontainer {
+    min-width: unset;
+  }
 }
