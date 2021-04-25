@@ -257,7 +257,7 @@
                       <div class="prow-items">
                         <div class="green-dot"></div>
                         <div class="prow-text">
-                          法巴能源轉型股票基金<br/>(累積)(美元)
+                          法巴能源轉型股票基金(累積)(美元)
                         </div>
                       </div>
                       <div class="prow-btns">
@@ -444,12 +444,16 @@
           }, 500);
         }
         $(document).ready(function() {
-            // $(".white-btn-selected").click(function() {
-            //   scrollToContent();
-            // });
-            // if (window.location.href.indexOf("reading=true") !== -1) {
-            //   scrollToContent();
-            // }
+            // $("a.buy").hide();
+            $(window).on('scroll', function() {
+            var y_scroll_pos = window.pageYOffset;
+            var scroll_pos_test = $("#content").offset().top - 200;
+            if(y_scroll_pos > scroll_pos_test) {
+            $("a.buy").fadeIn(500);
+            } else {
+            $("a.buy").fadeOut(500);
+            }
+        });
         })
     </script>
     <!-- Tracking begin -->

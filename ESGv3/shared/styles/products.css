@@ -210,3 +210,7 @@
     min-width: unset;
   }
 }
+
+a.buy {
+  display: none;
+}

@@ -531,6 +531,20 @@
     <script src="https://eb.ctbcbank.com/jscollection/WebConnector-webpage.js"></script>
     <script src="shared/scripts/jquery-2.2.4.min.js"></script>
     <script src="shared/scripts/index.js?20201202"></script>
+    <script>
+        $(document).ready(function() {
+            // $("a.buy").hide();
+            $(window).on('scroll', function() {
+            var y_scroll_pos = window.pageYOffset;
+            var scroll_pos_test = $("#content").offset().top - 200;
+            if(y_scroll_pos > scroll_pos_test) {
+            $("a.buy").fadeIn(500);
+            } else {
+            $("a.buy").fadeOut(500);
+            }
+        });
+        })
+    </script>
     <!-- Tracking begin -->
     <script>
       var bigdata_infos = {
