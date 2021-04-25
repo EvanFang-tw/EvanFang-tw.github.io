@@ -118,3 +118,31 @@
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+#product-container > #layout {
+  margin-top: 0px !important;
+}
+
+#tree-container {
+  width: 100%;
+  position: relative;
+  padding-bottom: 9.5%;
+}
+
+#tree1 {
+  position: absolute;
+  width: 24.5%;
+  left: 24.2%;
+  top: -14%;
+}
+
+#tree2 {
+  position: absolute;
+  width: 9%;
+  left: 66.5%;
+  top: -9%;
+}
+
+#content {
+  padding-top: 65px;
+}
