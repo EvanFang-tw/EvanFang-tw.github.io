@@ -183,6 +183,9 @@
   .prow-items {
     margin-bottom: 15px;
   }
+  .prow-text {
+    font-size: 18px;
+  }
   .gray-line {
     margin-top: 22px;
     margin-bottom: 22px;
