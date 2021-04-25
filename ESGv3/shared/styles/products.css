@@ -214,3 +214,69 @@
 a.buy {
   display: none;
 }
+
+/* go top */
+.hide {
+  display: none !important;
+}
+
+.go-top {
+  position: fixed;
+  right: 8px;
+  bottom: 62px;
+  font-size: 1.1rem;
+  z-index: 999;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #007979;
+  border: 2px solid #007979;
+  opacity: 0.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  transition-property: opacity background-color;
+  transition-duration: 0.75s;
+}
+
+.go-top:hover {
+  opacity: 0.9;
+  background-color: white;
+}
+
+@keyframes showGoTop {
+  from {
+    opacity: 0;
+    bottom: 0;
+  }
+  to {
+    opacity: 0.5;
+    bottom: 62;
+  }
+}
+@keyframes hideGoTop {
+  from {
+    opacity: 0.5;
+    bottom: 62;
+  }
+  to {
+    opacity: 0;
+    bottom: 0;
+  }
+}
+.show-go-top {
+  animation: showGoTop 0.6s;
+  animation-fill-mode: forwards;
+}
+.hide-go-top {
+  animation: hideGoTop 0.6s;
+  animation-fill-mode: forwards;
+}
+
+@media (max-width: 800px) {
+  .go-top {
+    display: none;
+  }
+}
